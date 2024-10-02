@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Album di carte</title>
+		<link rel="stylesheet" href="../css/marvel.css">
+		<script type="text/javascript" src="../js/marvel.js"></script>
+	</head>
+	
+	<body onload = "costruisciLista()">
+		<header id = "header">
+			<img src="../img/Marvel_Logo.png" alt= "Logo Marvel" id = "logo"></img>
+			<div id = "title"> Album di Figurine dei SuperEroi
+				<div class="menu_header">
+					<a href="#">Album</a>
+					<a href="#">Profilo Utente</a>
+					<a href="shop.html">Negozio</a>
+					<p type="text" id="crediti" readonly onload="mostraCrediti()">
+						<img src="../img/Currency.png" alt = "Currency" id = "currency"></img>
+					</p>
+				</div>
+			</div>
+		</header> 
+		
+		<h1 id = "titoloContenuto">Album delle carte</h1>
+		<ul id="listaCarte"></ul>
+		
+		<!-- Modal dove inserirò le informazioni di ogni carta -->
+		<div id="modal" class="modal">
+			<div id="modal-content">
+			</div>
+		</div>
+
+		
+	</body>
+	
+	
+	<script>
+		getFromMarvel('public/characters').then(result => console.log(result.data.results))
+	</script>
+
+</html>

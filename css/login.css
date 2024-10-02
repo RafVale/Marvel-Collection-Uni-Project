@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+#header{
+    display: flex;
+    background: #242424;
+    height: 6em;
+    position: fixed;
+    top:0;
+    left: 0;
+    flex-basis: 100%;
+}
+
+#logo{
+    left:1em;
+    top: 1em;
+}
+
+#title{
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 1em;
+    font-size:xx-large;
+    font-weight: bold;
+    color:white;
+}
+
+body {
+    background-image: url("../img/marvelSite1200x630.jpg");
+    background-size:cover;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    color:white;
+}
+
+#contenitoreLogin {
+    background-color: #242424;
+    position: absolute;
+    width: 500px;
+    height: fit-content;
+    top:50%;
+    left: 50%;
+    margin-top: -400px;
+    margin-left: -250px;
+}
+
+form {
+    padding: 45px;
+}
+
+#titoloLogin {
+    background-color: #242424;
+    margin: 0;
+    padding: 5%;
+    border: 1px solid red;
+    text-align: center;
+}
+
+#username {
+    position: relative;
+    background: rgb(215, 215, 215);
+    width: 100%;
+    border: 0;
+    top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#password {
+    position: relative;
+    background: rgb(215, 215, 215);
+    width: 100%;
+    border: 0;
+    top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#passEye {
+    position: relative;
+    width: 12%;
+    left: 170px;
+    top: -58px;
+  }
+
+#passDimenticata {
+    position:relative;
+    bottom: 41px;
+}
+
+.messaggio {
+    position:absolute;
+    font-size: 18px;
+    bottom:0;
+    left:106px;
+}
+
+#rememberMe {
+    font-size: 18px;
+    position: relative;
+    bottom: 1px;
+    margin-right: 4px;
+    vertical-align: middle;
+    bottom: 60px;
+    left: 244px;
+}
+
+button {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    background: rgb(215, 215, 215);
+    padding: 15px;
+    margin-bottom: 0px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#registrati {
+    display: none;
+}
+
+#mailRegis {
+    position: relative;
+    background: rgb(215, 215, 215);
+    width: 100%;
+    border: 0;
+    top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#usernameRegis {
+    position: relative;
+    background: rgb(215, 215, 215);
+    width: 100%;
+    border: 0;
+    top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+
+#passwordRegis {
+    position: relative;
+    background: rgb(215, 215, 215);
+    width: 100%;
+    border: 0;
+    top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#passEyeRegis {
+    position: relative;
+    width: 12%;
+    top: -235px;
+    left: 357px;
+}
+
+#passwordRipetuto {
+    position: relative;
+    background: rgb(215, 215, 215);
+    width: 100%;
+    border: 0;
+    top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#eroePreferito {
+    position: relative;
+    background: rgb(215, 215, 215);
+    width: 100%;
+    border: 0;
+    top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 18px;
+}

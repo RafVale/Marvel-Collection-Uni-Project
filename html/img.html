@@ -1,0 +1,10 @@
+<body>
+<img id="img-container" display = none></img>
+</body>
+
+<script>
+    getFromMarvel('public/characters').then
+			(result => {
+			let img = document.getElementById("img-container");
+      		img.src = (result.data.results[0].thumbnail.path + "/portrait_uncanny." + result.data.results[0].thumbnail.extension)});
+</script>

@@ -1,0 +1,47 @@
+<!doctype html>
+    <html lang="en">
+	    <head>
+		    <meta charset="utf-8">
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <title>Apri l'Album!</title>
+		    <link rel="stylesheet" href="../css/login.css">
+		    <script src="../js/login.js"></script>
+	    </head>
+
+        <body>
+			<header id = "header">
+				<img src="../img/Marvel_Logo.png" alt= "Logo Marvel" id = "logo"></img>
+					<div id = "title"> Album di Figurine dei SuperEroi</div>
+			</header>
+			
+			<!-- Creo un div dove inserire le due form -->
+			<div id="contenitoreLogin">
+
+				<!--Creo la form di login-->
+				<form id= "login" method="post" action="index.html" onsubmit="return verifica()">
+					<h1 id ="titoloLogin"> Accedi alla tua collezione! </h1>
+					<input id="username" type="text" placeholder="Inserire l'username" required/>
+					<input id="password" type="password" placeholder="Inserire la password" required/>
+					<a href="#" id="passDimenticata">Dimenticata la Password?</a>
+						<img id="passEye" src="../img/passEye.png" onclick="mostraPW()"></img>
+					<div id="rememberMe"><input type="checkbox" > Ricorda l'accesso </input></div>
+					<button type="submit">Accedi</button>
+					<p class="messaggio">Non sei registrato? <a href="#" onclick="registrati()">Crea un account</a></p>
+    			</form>
+
+				<!--Creo la form di registrazione-->
+				<form id= "registrati" method="post" action="index.html" onsubmit=" return registra()">
+					<h1 id ="titoloLogin"> Crea una tua collezione! </h1>
+					<input id="mailRegis" type="email" placeholder="Inserire una e-mail valida" required/>
+					<input id="usernameRegis" type="text" placeholder="Inserire l'username" required/>
+					<input id="passwordRegis" type="password" placeholder="Inserire la password" required/>
+					<input id="passwordRipetuto" type="password" placeholder="Inserire nuovamente la password" required/>
+					<input id="eroePreferito" type="text" placeholder="Indica il tuo Eroe preferito" required/>
+					<img id="passEyeRegis" src="../img/passEye.png" onclick="mostraPWReg()"></img>
+					<button type="submit">Registrati!</button>
+					<p class="messaggio">Sei già registrato? <a href="#" onclick="passaLogin()">Effettua l'accesso!</a></p>
+				</form>
+
+			</div>
+        </body>
+    </html>

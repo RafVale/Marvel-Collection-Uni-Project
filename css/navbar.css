@@ -1,0 +1,60 @@
+*{
+    margin: 0;  
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+#header{
+    display: flex;
+    background: #242424;
+    height: 6em;
+}
+
+#logo{
+    left:1em;
+    top: 1em;
+}
+
+#title{
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 1em;
+    font-size:xx-large;
+    font-weight: bold;
+    color:white;
+}
+
+.menu_header{
+    position:relative;
+    display: inline-flex;
+    font-size:xx-large;
+    font-weight: bold;
+    left: 65%;
+}
+
+.menu_header a{
+    flex-grow: 1;
+    margin-right: 2.5em;
+    color:white;
+}
+
+.menu_header a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+#crediti{
+    border-radius: 20px;
+    border: 1px solid rgb(255, 0, 0);
+    width: 6em;
+    height: 1.2em;
+    overflow: visible;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+#currency{
+    width: 0.7em;
+    align-items: end;
+}

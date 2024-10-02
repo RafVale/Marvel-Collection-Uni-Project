@@ -1,0 +1,80 @@
+*{
+    margin: 0;  
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+#header{
+    display: flex;
+    background: #242424;
+    height: 6em;
+}
+
+#logo{
+    left:1em;
+    top: 1em;
+}
+
+#title{
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 1em;
+    font-size:xx-large;
+    font-weight: bold;
+    color:white;
+}
+
+.menu_header{
+    position:relative;
+    display: inline-flex;
+    font-size:xx-large;
+    font-weight: bold;
+    left: 65%;
+}
+
+.menu_header a{
+    flex-grow: 1;
+    margin-right: 2.5em;
+    text-decoration: none;
+    color:white;
+}
+
+.menu_header a:hover{
+    color: #ddddddd0;
+    transition: 0.5s;
+}
+
+#crediti{
+    border-radius: 20px;
+    border: 1px solid rgb(255, 0, 0);
+    width: 6em;
+    height: 1.2em;
+    overflow: visible;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+#currency{
+    width: 0.7em;
+    align-items: end;
+}
+
+#listaCrediti {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iconaNegozio {
+    position: relative;
+    width: 25em;
+}
+
+.prezzo {
+    position: relative;
+    height: 2em;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 0.5em;
+
+}
